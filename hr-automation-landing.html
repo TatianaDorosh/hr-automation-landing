@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Automation Platform — Автоматизація HR-процесів</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-gradient-to-br from-purple-600 to-indigo-600 rounded-lg flex items-center justify-center">
+                    <span class="text-white font-bold text-xl">HR</span>
+                </div>
+                <span class="text-2xl font-bold text-gray-900">HR Automation</span>
+            </div>
+            
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#features" class="text-gray-600 hover:text-purple-600 transition">Можливості</a>
+                <a href="#benefits" class="text-gray-600 hover:text-purple-600 transition">Переваги</a>
+                <a href="#pricing" class="text-gray-600 hover:text-purple-600 transition">Тарифи</a>
+                <a href="#contact" class="text-gray-600 hover:text-purple-600 transition">Контакти</a>
+            </div>
+            
+            <div class="flex items-center space-x-4">
+                <button class="text-purple-600 hover:text-purple-700 font-medium">Вхід</button>
+                <button class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg font-medium transition">
+                    Спробувати безкоштовно
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center fade-in">
+                <div>
+                    <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
+                        Автоматизуйте HR за 3 хвилини
+                    </h1>
+                    <p class="text-xl text-purple-100 mb-8">
+                        Платформа, яка економить до 20 годин на тиждень на рутинних HR-процесах. 
+                        Наймання, онбординг, документообіг — все в одному місці.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition shadow-lg">
+                            Почати безкоштовно →
+                        </button>
+                        <button class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-purple-600 transition">
+                            Подивитись демо
+                        </button>
+                    </div>
+                    <p class="text-purple-200 text-sm mt-6">
+                        ✓ Без кредитної картки  ✓ 14 днів безкоштовно  ✓ Скасувати можна будь-коли
+                    </p>
+                </div>
+                
+                <div class="relative">
+                    <div class="bg-white rounded-xl shadow-2xl p-8 transform rotate-2">
+                        <div class="bg-gray-100 h-64 rounded-lg flex items-center justify-center text-gray-400">
+                            📊 Dashboard Preview
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Все, що потрібно HR-відділу</h2>
+                <p class="text-xl text-gray-600">Комплексне рішення для автоматизації всіх HR-процесів</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-md card-hover transition-all">
+                    <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+                        <span class="text-3xl">👥</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Рекрутинг та наймання</h3>
+                    <p class="text-gray-600 mb-4">
+                        Автоматизація публікації вакансій, відбору резюме та планування співбесід. 
+                        Зменшіть час найму на 40%.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>✓ Інтеграція з job-порталами</li>
+                        <li>✓ AI-скринінг кандидатів</li>
+                        <li>✓ Календар співбесід</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-md card-hover transition-all">
+                    <div class="w-14 h-14 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                        <span class="text-3xl">📋</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Онбординг співробітників</h3>
+                    <p class="text-gray-600 mb-4">
+                        Персоналізовані сценарії адаптації нових працівників. Перші 90 днів без стресу.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>✓ Автоматичні вітальні листи</li>
+                        <li>✓ Чек-листи завдань</li>
+                        <li>✓ Призначення менторів</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-md card-hover transition-all">
+                    <div class="w-14 h-14 bg-pink-100 rounded-lg flex items-center justify-center mb-6">
+                        <span class="text-3xl">📄</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Документообіг</h3>
+                    <p class="text-gray-600 mb-4">
+                        Електронний підпис, шаблони документів, автоматичне формування контрактів.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>✓ Е-підпис DigiSign</li>
+                        <li>✓ Зберігання документів</li>
+                        <li>✓ Автогенерація форм</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="bg-white p-8 rounded-xl shadow-md card-hover transition-all">
+                    <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-6">
+                        <span class="text-3xl">📊</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">HR-аналітика</h3>
+                    <p class="text-gray-600 mb-4">
+                        Дашборди, звіти, метрики. Приймайте рішення на основі даних.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>✓ Turnover rate аналіз</li>
+                        <li>✓ Звіти по департаментах</li>
+                        <li>✓ Прогнозування потреб</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="bg-white p-8 rounded-xl shadow-md card-hover transition-all">
+                    <div class="w-14 h-14 bg-yellow-100 rounded-lg flex items-center justify-center mb-6">
+                        <span class="text-3xl">⏰</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Облік робочого часу</h3>
+                    <p class="text-gray-600 mb-4">
+                        Табелі, відпустки, лікарняні. Автоматичний розрахунок і звітність.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>✓ Тайм-трекінг</li>
+                        <li>✓ Календар відпусток</li>
+                        <li>✓ Заявки на відсутність</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="bg-white p-8 rounded-xl shadow-md card-hover transition-all">
+                    <div class="w-14 h-14 bg-red-100 rounded-lg flex items-center justify-center mb-6">
+                        <span class="text-3xl">💬</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Оцінка продуктивності</h3>
+                    <p class="text-gray-600 mb-4">
+                        360° feedback, OKR, PDR. Розвивайте команду ефективно.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>✓ Система оцінювання KPI</li>
+                        <li>✓ Анонімні опитування</li>
+                        <li>✓ Плани розвитку</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="bg-gray-100 py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">Чому обирають нас?</h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <span class="text-white text-2xl">⚡</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Економія часу 20+ годин/тиждень</h3>
+                                <p class="text-gray-600">Автоматизуйте рутинні процеси та зосередьтесь на стратегічних завданнях</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <span class="text-white text-2xl">💰</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Зниження витрат на 35%</h3>
+                                <p class="text-gray-600">Оптимізація HR-процесів дозволяє суттєво скоротити операційні витрати</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-pink-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <span class="text-white text-2xl">📈</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Підвищення задоволеності на 45%</h3>
+                                <p class="text-gray-600">Співробітники отримують кращий досвід від прозорих та швидких процесів</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                        <div class="text-4xl font-bold text-purple-600 mb-2">10K+</div>
+                        <div class="text-gray-600">Компаній використовують</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                        <div class="text-4xl font-bold text-indigo-600 mb-2">99.8%</div>
+                        <div class="text-gray-600">Uptime SLA</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                        <div class="text-4xl font-bold text-pink-600 mb-2">4.9/5</div>
+                        <div class="text-gray-600">Рейтинг на G2</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                        <div class="text-4xl font-bold text-green-600 mb-2">24/7</div>
+                        <div class="text-gray-600">Підтримка</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Прозорі тарифи без прихованих комісій</h2>
+                <p class="text-xl text-gray-600">Оберіть план, що підходить вашій команді</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Starter -->
+                <div class="bg-white p-8 rounded-xl shadow-md border-2 border-gray-200">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Starter</h3>
+                    <p class="text-gray-600 mb-6">Для малих команд до 20 осіб</p>
+                    <div class="mb-6">
+                        <span class="text-5xl font-bold text-gray-900">$49</span>
+                        <span class="text-gray-600">/місяць</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-gray-700">
+                            <span class="text-green-500 mr-2">✓</span>
+                            До 20 співробітників
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <span class="text-green-500 mr-2">✓</span>
+                            Базовий рекрутинг
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <span class="text-green-500 mr-2">✓</span>
+                            Облік часу
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <span class="text-green-500 mr-2">✓</span>
+                            Email підтримка
+                        </li>
+                    </ul>
+                    <button class="w-full bg-gray-100 text-gray-900 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
+                        Почати безкоштовно
+                    </button>
+                </div>
+
+                <!-- Professional (Popular) -->
+                <div class="bg-white p-8 rounded-xl shadow-xl border-2 border-purple-600 relative transform scale-105">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-purple-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
+                            Найпопулярніший
+                        </span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Professional</h3>
+                    <p class="text-gray-600 mb-6">Для компаній до 100 осіб</p>
+                    <div class="mb-6">
+                        <span class="text-5xl font-bold text-gray-900">$149</span>
+                        <span class="text-gray-600">/місяць</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-gray-700">
+                            <span class="text-green-500 mr-2">✓</span>
+                            До 100 співробітників
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <span class="text-green-500 mr-2">✓</span>
+                            Повний рекрутинг + AI
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <span class="text-green-500 mr-2">✓</span>
+                            Онбординг та документи
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <span class="text-green-500 mr-2">✓</span>
+                            Аналітика та звіти
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <span class="text-green-500 mr-2">✓</span>
+                            Пріоритетна підтримка
+                        </li>
+                    </ul>
+                    <button class="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition">
+                        Почати безкоштовно
+                    </button>
+                </div>
+
+                <!-- Enterprise -->
+                <div class="bg-white p-8 rounded-xl shadow-md border-2 border-gray-200">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Enterprise</h3>
+                    <p class="text-gray-600 mb-6">Для великих корпорацій</p>
+                    <div class="mb-6">
+                        <span class="text-5xl font-bold text-gray-900">Custom</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-gray-700">
+                            <span class="text-green-500 mr-2">✓</span>
+                            Необмежена кількість
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <span class="text-green-500 mr-2">✓</span>
+                            Всі функції Professional
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <span class="text-green-500 mr-2">✓</span>
+                            Власний сервер (on-premise)
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <span class="text-green-500 mr-2">✓</span>
+                            Кастомні інтеграції
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <span class="text-green-500 mr-2">✓</span>
+                            Виділений менеджер
+                        </li>
+                    </ul>
+                    <button class="w-full bg-gray-100 text-gray-900 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
+                        Зв'язатись з нами
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="gradient-bg text-white py-20">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-6">Готові автоматизувати HR?</h2>
+            <p class="text-xl text-purple-100 mb-8">
+                Приєднуйтесь до 10 000+ компаній, які вже використовують нашу платформу
+            </p>
+            <form class="max-w-md mx-auto mb-8">
+                <div class="flex gap-4">
+                    <input 
+                        type="email" 
+                        placeholder="Ваш робочий email" 
+                        class="flex-1 px-6 py-4 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-300"
+                    />
+                    <button class="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition">
+                        Почати
+                    </button>
+                </div>
+            </form>
+            <p class="text-purple-200 text-sm">
+                ✓ 14 днів безкоштовно  ✓ Без кредитної картки  ✓ Налаштування за 5 хвилин
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-br from-purple-600 to-indigo-600 rounded-lg"></div>
+                        <span class="text-white font-bold text-xl">HR Automation</span>
+                    </div>
+                    <p class="text-sm">Автоматизація HR-процесів для сучасних компаній</p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Продукт</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Можливості</a></li>
+                        <li><a href="#" class="hover:text-white transition">Тарифи</a></li>
+                        <li><a href="#" class="hover:text-white transition">Інтеграції</a></li>
+                        <li><a href="#" class="hover:text-white transition">API</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Компанія</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Про нас</a></li>
+                        <li><a href="#" class="hover:text-white transition">Блог</a></li>
+                        <li><a href="#" class="hover:text-white transition">Кар'єра</a></li>
+                        <li><a href="#" class="hover:text-white transition">Контакти</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Підтримка</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Документація</a></li>
+                        <li><a href="#" class="hover:text-white transition">Навчальний центр</a></li>
+                        <li><a href="#" class="hover:text-white transition">Статус системи</a></li>
+                        <li><a href="#" class="hover:text-white transition">support@hrautomation.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm">&copy; 2024 HR Automation Platform. Всі права захищені.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition">Політика конфіденційності</a>
+                    <a href="#" class="hover:text-white transition">Умови використання</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
